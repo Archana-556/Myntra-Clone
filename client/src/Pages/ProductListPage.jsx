@@ -18,7 +18,7 @@ export default function ProductListPage() {
             <Link
               to={`/${category}/${type}/${product.id}`}
               key={product.id}
-              className="p-4 rounded hover:shadow-md bg-white transition duration-300"
+              className="p-4` rounded hover:shadow-md bg-white transition duration-300"
             >
               <img
                 src={product.image}
