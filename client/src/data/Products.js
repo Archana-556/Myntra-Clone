@@ -34,7 +34,7 @@ const products = {
         price: '₹999',
         description: 'Stylish denim for casual wear.',
       },
-      // ...add at least 15 shirt objects
+      
     ],
     shoes: [
       {

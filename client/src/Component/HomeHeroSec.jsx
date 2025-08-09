@@ -27,11 +27,11 @@ Image:"https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
   };
   return (
      <>

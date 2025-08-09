@@ -73,7 +73,9 @@ export default function Navbar() {
                 <p className="font-semibold text-sm">Welcome</p>
                 <p className="text-xs text-gray-600">To access account and manage orders</p>
                 <button className="mt-3 w-full border border-pink-500 text-pink-500 font-bold py-1 rounded text-sm hover:bg-pink-50">
+                 <Link to={'/login'}>
                   LOGIN / SIGNUP
+                  </Link> 
                 </button>
               </div>
               <ul className="text-sm p-4 space-y-2 border-b">
