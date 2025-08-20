@@ -47,7 +47,7 @@ const RisigStar = () => {
    },
    {
     id:13,
-    image:'https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/4/3/1f6b7d8c-9a0e-4b1c-8d2f-3a6d5e7f9b4c1743664961980-image_png_126626870.png',
+    image:'https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/4/3/62d92229-2d9d-4cc6-933f-1facd190248c1743664969307-image_png_1434304747.png',
    },
    {
     id:14,

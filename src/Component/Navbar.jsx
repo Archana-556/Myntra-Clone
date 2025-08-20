@@ -30,7 +30,7 @@ export default function Navbar() {
           <ul className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item, index) => (
               <li key={index} className="relative group">
-                <button className="text-sm font-semibold text-gray-800 hover:text-pink-600">
+                <button className="text-sm font-semibold text-gray-800 py-5 hover:text-pink-600">
              <Link key={item.path} to={`/${item.path}`}>{item.name}</Link>     
                 </button>
                 {item.tag && (
@@ -38,7 +38,7 @@ export default function Navbar() {
                 )}
 
                 {/* Dropdown on hover */}
-                <div className="absolute top-full left-0 bg-white border rounded shadow-md p-4 mt-2 hidden group-hover:block z-10 min-w-[160px]">
+                <div className="absolute top-full left-0 bg-white border rounded shadow-md p-4 hidden group-hover:block z-10 min-w-[160px]">
                   <ul className="space-y-2">
                     {item.submenu.map((sub, i) => (
                       <li key={i} className="text-sm text-gray-700 hover:text-pink-500 cursor-pointer">
@@ -64,9 +64,38 @@ export default function Navbar() {
 
         {/* Right: Icons */}
         <div className="hidden lg:flex items-center space-x-6 text-sm text-gray-800 font-medium">
-          <div className="flex flex-col items-center hover:text-pink-600 cursor-pointer">
+          <div className="flex flex-col items-center hover:text-pink-600 cursor-pointer group">
             <FaUser size={18} />
             <span>Profile</span>
+            {/* Profile Card on Hover */}
+            <div className="absolute right-0 mt-12 mr-8 px-5 w-80 bg-white shadow-lg border border-gray-200 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="p-4 border-b">
+                <p className="font-semibold text-sm">Welcome</p>
+                <p className="text-xs text-gray-600">To access account and manage orders</p>
+                <button className="mt-3 w-full border border-pink-500 text-pink-500 font-bold py-1 rounded text-sm hover:bg-pink-50">
+                 <Link to={'/login'}>
+                  LOGIN / SIGNUP
+                  </Link> 
+                </button>
+              </div>
+              <ul className="text-sm p-4 space-y-2 border-b">
+                <li className="hover:text-pink-600 cursor-pointer">Orders</li>
+                <li className="hover:text-pink-600 cursor-pointer">Wishlist</li>
+                <li className="hover:text-pink-600 cursor-pointer">Gift Cards</li>
+                <li className="hover:text-pink-600 cursor-pointer">Contact Us</li>
+                <li className="hover:text-pink-600 cursor-pointer flex items-center justify-between">
+                  Myntra Insider
+                  <span className="bg-pink-500 text-white text-[10px] px-2 py-0.5 rounded-full">NEW</span>
+                </li>
+              </ul>
+              <ul className="text-sm p-4 space-y-2">
+                <li className="hover:text-pink-600 cursor-pointer">Myntra Credit</li>
+                <li className="hover:text-pink-600 cursor-pointer">Coupons</li>
+                <li className="hover:text-pink-600 cursor-pointer">Saved Cards</li>
+                <li className="hover:text-pink-600 cursor-pointer">Saved VPA</li>
+                <li className="hover:text-pink-600 cursor-pointer">Saved Addresses</li>
+              </ul>
+            </div>
           </div>
           <div className="flex flex-col items-center hover:text-pink-600 cursor-pointer">
             <FaHeart size={18} />

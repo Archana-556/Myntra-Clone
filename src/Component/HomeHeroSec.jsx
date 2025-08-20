@@ -4,7 +4,7 @@ const HomeHeroSec = () => {
  const HeroCarouselImg =[
   {
 id: 1,
-Image:"https:assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/31/4031994d-9092-4aa7-aea1-f52f2ae5194f1654006594976-Activewear_DK.jpg",
+Image:"https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2025/7/29/35561f24-1822-4075-bfe6-16ca48d3fe131753810990294-RTF-Prebuzz-Desktop-KV.jpg",
   },
   {
 id: 2,
@@ -27,11 +27,11 @@ Image:"https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
   };
   return (
      <>
